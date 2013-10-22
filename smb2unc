@@ -1,5 +1,5 @@
 #!/usr/bin/env ruby
-#
+
 def smb2unc(smb_path)
   smb_path.gsub(/^smb:/, "").gsub("/", "\\")
 end
