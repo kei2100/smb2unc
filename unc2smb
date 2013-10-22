@@ -1,0 +1,15 @@
+#!/usr/bin/env ruby
+
+def unc2smb(unc_path)
+  "smb:" + unc_path.gsub("\\", "/")
+end
+
+if File.pipe?(STDIN)
+  STDIN.each_line do |line|
+    puts unc2smb line
+  end
+end
+
+ARGV.each do |arg|
+  puts unc2smb arg
+end
