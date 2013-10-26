@@ -3,7 +3,7 @@ smb2unc
 
 Description
 ------
-UNC/SMB path translator
+UNC/SMB path translator (CLI)
 
 Usage
 ------
